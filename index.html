@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/script.js">
+    </script>
+</head>
+<body >
+	<center>
+		<div class="caja">
+		<form>
+			<div >
+				<div class="margen">
+					<p class="letra">Calculadora basica</p>
+				</div>
+		<table>
+			<tr>
+              <td colspan="3"><input class="text" name="caja" id="campodetexto" type="text" value="" readonly="readonly"></td>
+              <td><input class="col-1" id="borrar" type="button" value="<=" onclick="eliminarCaracter(this.form.caja)"></td>
+            </tr>
+			<tr>
+              <td><input class="col-2" id="7" type="button" value="7" onClick="agregarNumero(this.form.caja, '7')"></td>
+              <td><input class="col-2" id="8" type="button" value="8" onClick="agregarNumero(this.form.caja, '8')"></td>
+              <td><input class="col-2" id="9" type="button" value="9" onClick="agregarNumero(this.form.caja, '9')"></td>
+              <td><input class="col-3" id="suma" type="button" value="+" onClick="agregarNumero(this.form.caja, '+')"></td>
+            </tr>
+			<tr>
+              <td><input class="col-2" id="4" type="button" value="4" onClick="agregarNumero(this.form.caja, '4')"></td>
+              <td><input class="col-2" id="5" type="button" value="5" onClick="agregarNumero(this.form.caja, '5')"></td>
+              <td><input class="col-2" id="6" type="button" value="6" onClick="agregarNumero(this.form.caja, '6')"></td>
+              <td><input class="col-3" id="resta" type="button" value="-" onClick="agregarNumero(this.form.caja, '-')"></td>
+            </tr>
+            <tr>
+              <td><input class="col-2" id="1" type="button" value="1" onClick="agregarNumero(this.form.caja, '1')"></td>
+              <td><input class="col-2" id="2" type="button" value="2" onClick="agregarNumero(this.form.caja, '2')"></td>
+              <td><input class="col-2" id="3" type="button" value="3" onClick="agregarNumero(this.form.caja, '3')"></td>
+              <td><input class="col-3" id="multiplicacion" type="button" value="*" onClick="agregarNumero(this.form.caja, '*')"></td>
+            </tr>
+            <tr>
+              <td><input class="col-2" id="borrar-todo" type="button" value="CE" onClick="this.form.caja.value = 0 "></td>
+              <td><input class="col-2" id="0" type="button" value="0" onClick="agregarNumero(this.form.caja, '0')"></td>
+              <td><input class="col-2" id="igual" type="button" value="=" onClick="if (verificar(this.form.caja.value)){ resultado(this.form) }"></td>
+              <td><input class="col-3" id="division" type="button" value="/" onClick="agregarNumero(this.form.caja, '/')"></td>
+            </tr>
+		</table>
+		</div>
+	</form>
+	</div>
+</center>
+</body>
+</html>

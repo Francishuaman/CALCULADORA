@@ -1,0 +1,61 @@
+*{
+	margin: 0px;
+}
+body
+{
+	background-color: yellow;
+
+	background:  url(../img/matex2.jpg)center;
+	width: 100%;
+	height: 100%;
+
+}
+.letra{
+	
+	padding:15px 0px;
+	color: #000;
+	margin-left: -50px;
+	font-family: impact;
+	font-size: 40px;
+	line-height: 70%;
+	text-shadow: -2px -2px 0px #fff, 2px -2px 0px #fff, -2px 2px 50px #fff, 2px 2px 0px #fff;
+}
+.margen
+{
+	width: 400px;
+	margin-top:10px;
+	height: 50px;
+	background-color: white;
+	background-color: rgba(0,0,0,0.1);
+}
+.caja
+{
+	margin-top: 70px;
+	width: 350px;
+	height: 480px;
+	background-color: rgba(0,0,0,0.5);
+}
+.text
+{
+	width: 243.5px;
+	height: 75px;
+	font-size: 20px;
+}
+.col-1
+{
+	width: 80px;
+	height: 80px;
+	font-size: 25px;
+}
+.col-2
+{
+	width: 80px;
+	height: 80px;
+	font-size: 25px;
+}
+.col-3
+{
+	width: 80px;
+	height: 80px;
+	font-size: 25px;
+}
